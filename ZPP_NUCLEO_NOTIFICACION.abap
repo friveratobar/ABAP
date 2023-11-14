@@ -117,7 +117,7 @@ ENDFORM.                    "get_sender_name
 *&---------------------------------------------------------------------*
 *       Obtiene el Centro
 *----------------------------------------------------------------------*
-*      -->I_ORDEN    N˙mero de Orden
+*      -->I_ORDEN    N√∫mero de Orden
 *      -->C_CENTRO   Centro
 *----------------------------------------------------------------------*
 FORM get_centro USING i_orden
@@ -140,9 +140,9 @@ ENDFORM.                    "get_centro
 *&---------------------------------------------------------------------*
 *&      Form  get_tipo_caract
 *&---------------------------------------------------------------------*
-*       Obtiene el Tipo de la CaracterÌstica
+*       Obtiene el Tipo de la Caracter√≠stica
 *----------------------------------------------------------------------*
-*      -->I_CARACT   CaracterÌstica
+*      -->I_CARACT   Caracter√≠stica
 *      -->C_TIPO     Tipo
 *----------------------------------------------------------------------*
 FORM get_tipo_caract USING i_caract TYPE atnam
@@ -215,7 +215,7 @@ FORM obtener_datos_orden USING u_orden TYPE coch-bid.
 *    FROM cofv
 *      WHERE crid EQ vl_crid.
 
-* Mod : frivera 29.07.2014 : Modifica la busqueda de la OperaciÛn y la Fase.
+* Mod : frivera 29.07.2014 : Modifica la busqueda de la Operaci√≥n y la Fase.
   DATA: ls_afko TYPE afko.
   DATA: it_afft TYPE STANDARD TABLE OF afft , wa_afft TYPE afft.
   DATA: it_affv TYPE STANDARD TABLE OF affv , wa_affv TYPE affv.
@@ -341,7 +341,7 @@ ENDFORM.                    "ejecutar_bapi
 *&---------------------------------------------------------------------*
 *&      Form  entrada_material
 *&---------------------------------------------------------------------*
-*     Linea 1 => Entrada de MercancÌas y Hoja de Salario
+*     Linea 1 => Entrada de Mercanc√≠as y Hoja de Salario
 *     Entrada de Material
 *     PI_PROD
 *----------------------------------------------------------------------*
@@ -455,7 +455,7 @@ ENDFORM.                    "entrada_material
 *&---------------------------------------------------------------------*
 *&      Form  hoja_salario
 *&---------------------------------------------------------------------*
-*     Linea 1 => Entrada de MercancÌas y Hoja de Salario
+*     Linea 1 => Entrada de Mercanc√≠as y Hoja de Salario
 *     Hoja de Salario
 *     PI_PHCON
 *----------------------------------------------------------------------*
@@ -731,8 +731,8 @@ ENDFORM.                    "hoja_salario
 *&---------------------------------------------------------------------*
 *&      Form  consumos
 *&---------------------------------------------------------------------*
-*     Linea N => Consumo de MercancÌas
-*     Consumo de MercancÌas
+*     Linea N => Consumo de Mercanc√≠as
+*     Consumo de Mercanc√≠as
 *     PI_CONS
 *----------------------------------------------------------------------*
 FORM consumos.
@@ -1108,7 +1108,7 @@ FORM notif_comp_no_notif USING u_numop
       PERFORM ejecutar_bapi TABLES u_retorno.
       v_msid = v_msid + 1.
     ELSE.
-      EXIT. "& No hay m·s consumos a notificar
+      EXIT. "& No hay m√°s consumos a notificar
     ENDIF.
   ENDLOOP.
 
